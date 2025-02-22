@@ -1,0 +1,40 @@
+.contactItem {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.contactDeleteButton {
+    background: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.contactListContainer {
+    border: 1px solid green;
+    padding: 10px;
+}
+
+.searchBoxContainer {
+    border: 1px solid orange;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.searchBoxLabel {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.searchBoxInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}

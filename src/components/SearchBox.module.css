@@ -1,0 +1,16 @@
+.searchBoxContainer {
+    border: 1px solid orange;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.searchBoxLabel {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.searchBoxInput {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
