@@ -7,9 +7,8 @@ function Contact({ contact, onDeleteContact }) {
       <span>
         {contact.name} : {contact.number}
       </span>
-
       <button
-        className="contactDeleteButton"
+        className={styles.contactDeleteButton}
         onClick={() => onDeleteContact(contact.id)}
       >
         Delete
@@ -17,8 +16,6 @@ function Contact({ contact, onDeleteContact }) {
     </div>
   );
 }
-
-export default Contact;
 
 Contact.propTypes = {
   contact: PropTypes.shape({
@@ -28,3 +25,5 @@ Contact.propTypes = {
   }).isRequired,
   onDeleteContact: PropTypes.func.isRequired,
 };
+
+export default Contact;
