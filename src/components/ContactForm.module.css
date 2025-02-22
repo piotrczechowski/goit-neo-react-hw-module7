@@ -1,5 +1,5 @@
 .contactFormContainer {
-    border: 1px solid blue;
+    border: 1px solid black;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -19,4 +19,19 @@
 .errorText {
     color: red;
     margin-bottom: 10px;
+}
+
+.contactList {
+    display: flex;
+    margin: 0px;
+    padding: 0;
+    flex-direction: block;
+}
+
+.contactList :first-child {
+    margin-left: 0px;
+}
+
+.contactList :last-child {
+    margin-right: 0px;
 }

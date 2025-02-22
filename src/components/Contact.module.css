@@ -1,40 +1,47 @@
 .contactItem {
     display: flex;
-    justify-content: space-between;
-    border: 1px solid #ccc;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-between; */
+    border: 1px solid black;
     border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 10px;
+    /* padding: 10px;
+    margin-bottom: 10px; */
+    width: 100%;
+    margin: 10px;
+
+
+}
+
+
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    /* Name on top, number below */
+}
+
+.contactName,
+.contactNumber {
+    margin-bottom: 5px;
+    display: flex;
     align-items: center;
 }
 
+
+.icon {
+    margin-right: 8px;
+}
+
+
 .contactDeleteButton {
-    background: #f44336;
+    background: black;
     color: #fff;
     border: none;
     border-radius: 3px;
     padding: 5px 10px;
     cursor: pointer;
-}
-
-.contactListContainer {
-    border: 1px solid green;
-    padding: 10px;
-}
-
-.searchBoxContainer {
-    border: 1px solid orange;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.searchBoxLabel {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.searchBoxInput {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5px;
+    display: flex;
+    margin: 5px;
+    min-width: 100px;
 }
