@@ -4,6 +4,7 @@ import { fetchContacts } from "./redux/contactOps";
 import ContactList from "./components/ContactList";
 import AddContactForm from "./components/AddContactForm";
 import Filter from "./components/Filter";
+import styles from "./app.module.css";
 
 function App() {
   const dispatch = useDispatch();
@@ -13,8 +14,8 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="App">
-      <h1>Contact Book</h1>
+    <div className={styles.App}>
+      <h1 className={styles.title}>Contact Book</h1>
       <AddContactForm />
       <Filter />
       <ContactList />

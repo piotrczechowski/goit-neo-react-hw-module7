@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addContact } from "../redux/contactOps";
+import styles from "./SearchBox.module.css";
 
 const AddContactForm = () => {
   const dispatch = useDispatch();
@@ -19,8 +20,9 @@ const AddContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.searchBoxContainer} onSubmit={handleSubmit}>
       <input
+        className={styles.searchBoxInput}
         type="text"
         placeholder="Name"
         value={name}
@@ -28,6 +30,7 @@ const AddContactForm = () => {
         disabled={loading}
       />
       <input
+        className={styles.searchBoxInput}
         type="text"
         placeholder="Number"
         value={number}

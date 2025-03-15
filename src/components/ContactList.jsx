@@ -2,7 +2,9 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectFilteredContacts } from "../redux/contactsSlice";
 import { deleteContact } from "../redux/contactOps";
+import styles from "./ContactForm.module.css";
 
+import { FaUser, FaPhone, FaTrashAlt } from "react-icons/fa";
 const ContactList = () => {
   const dispatch = useDispatch();
   const filteredContacts = useSelector(selectFilteredContacts);
@@ -13,17 +15,31 @@ const ContactList = () => {
   };
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (error) return <p className={styles.errorText}>Error: {error}</p>;
 
   return (
-    <ul>
-      {filteredContacts.map((contact) => (
-        <li key={contact.id}>
-          {contact.name}: {contact.number}
-          <button onClick={() => handleDelete(contact.id)}>Delete</button>
-        </li>
-      ))}
-    </ul>
+    <div className={styles.contacFormContainer}>
+      <ul className={styles.contactList}>
+        {filteredContacts.map((contact) => (
+          <li className={styles.contactItem} key={contact.id}>
+            {" "}
+            <div className={styles.contactInfo}>
+              <FaUser className={styles.icon} />
+              <span className={styles.contactName}>{contact.name}:</span>{" "}
+              <FaPhone className={styles.icon} />
+              <span className={styles.contactNumber}>{contact.number}</span>
+              <button
+                className={styles.contactDeleteButton}
+                onClick={() => handleDelete(contact.id)}
+              >
+                <FaTrashAlt className={styles.icon} />
+                Delete
+              </button>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
