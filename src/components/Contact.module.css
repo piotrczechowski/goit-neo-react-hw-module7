@@ -1,52 +1,51 @@
-.contactItem {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-    border: 1px solid black;
-    border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    margin: 10px;
-
-
-
-
-}
+ .contactItem {
+     /* display: flex; */
+     /* flex-wrap: wrap; */
+     align-items: center;
+     justify-content: space-between;
+     border: 1px solid black;
+     border-radius: 4px;
+     padding: 10px;
+     margin: 10px;
+     width: 100%;
+ }
 
 
 
-.contactInfo {
-    display: flex;
-    flex-direction: column;
+ .contactInfo {
+     display: flex;
+     flex-direction: column;
+     /* Name on top, number below */
+ }
 
-}
-
-.contactName,
-.contactNumber {
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-}
-
-
-.icon {
-    margin-right: 8px;
-}
+ .contactName,
+ .contactNumber {
+     margin-bottom: 5px;
+     display: flex;
+     align-items: center;
+ }
 
 
-.contactDeleteButton {
-    background: black;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    cursor: pointer;
-    display: flex;
-    margin: 5px;
-    min-width: 100px;
-    margin-left: auto;
+ .icon {
+     margin-right: 8px;
+ }
 
-    /* pushes the button to the right */
-}
+
+ .contactDeleteButton {
+     background: black;
+     color: #fff;
+     border: none;
+     border-radius: 3px;
+     padding: 5px 10px;
+     cursor: pointer;
+     display: flex;
+     margin: 5px;
+     min-width: 100px;
+     margin-left: auto;
+
+     /* pushes the button to the right */
+ }
+
+ .contactList {
+     width: 100%;
+ }

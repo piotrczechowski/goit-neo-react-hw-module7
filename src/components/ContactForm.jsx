@@ -1,4 +1,3 @@
-// src/components/ContactsForm.jsx
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addContact } from "../redux/contactsSlice";
