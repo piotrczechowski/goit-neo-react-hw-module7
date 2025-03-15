@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: space-between; */
+
     border: 1px solid black;
     border-radius: 4px;
     padding: 10px;
@@ -20,7 +20,7 @@
 .contactInfo {
     display: flex;
     flex-direction: column;
-    /* Name on top, number below */
+
 }
 
 .contactName,
