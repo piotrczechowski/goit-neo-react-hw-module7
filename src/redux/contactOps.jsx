@@ -2,7 +2,7 @@ import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 // endpoint
-const BASE_URL = "/api/contacts";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "/api/contacts";
 
 export const fetchContacts = createAsyncThunk(
   "contacts/fetchAll",
